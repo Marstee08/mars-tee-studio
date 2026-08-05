@@ -24,12 +24,16 @@
         </a>
     </div>
 
-    <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+   <div class="menu">
+        <a href="index.html">🏠Home</a>
+        <a href="about.html">👤About</a>
+        <a href="services.html">💼Services</a>
+        <a href="portfolio.html">🖼Portfolio</a>
+        <a href="contact.html">📞Contact</a>
+       <label class="switch">
+    <input type="checkbox" id="theme-toggle">
+    <span class="slider"></span>
+</label>
     </div>
 
 </nav>
@@ -98,6 +102,39 @@ Send Email
 
 </section>
 
+<section class="contact-form">
+
+<h2>Send Me a Message</h2>
+
+<form id="contact-form">
+
+<input type="text" name="from_name" placeholder="Your Full Name" required>
+
+<input type="email" name="from_email" placeholder="Your Email Address" required>
+
+<input type="text" name="phone" placeholder="Phone Number">
+
+<select name="service" required>
+<option value="">Select a Service</option>
+<option>Website Development</option>
+<option>Graphic Design</option>
+<option>Photo Editing</option>
+<option>Document Services</option>
+<option>Other</option>
+</select>
+
+<textarea name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+
+<button type="submit" class="btn">
+Send Message
+</button>
+
+</form>
+
+<p id="status"></p>
+
+</section>
+
 <section class="social-section">
 
 <h2>Follow Me</h2>
@@ -137,6 +174,12 @@ target="_blank">
 💬
 
 </a>
+
+<button id="backToTop" title="Go to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
