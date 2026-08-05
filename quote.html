@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Request a Quote | Mars Tee Studio</title>
+
+    <meta name="description"
+    content="Request a quote from Mars Tee Studio for web development, graphic design, photo editing and document services.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/favicon.png" alt="Mars Tee Studio">
+        </a>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="quote-hero">
+
+    <h1>Request a Quote</h1>
+
+    <p>
+        Tell me about your project and I'll get back to you
+        to discuss the details and pricing.
+    </p>
+
+</section>
+
+
+<!-- ORDER FORM -->
+
+<section class="quote-section">
+
+    <div class="quote-container">
+
+        <div class="quote-intro">
+
+            <span class="small-title">START A PROJECT</span>
+
+            <h2>Let's Bring Your Idea to Life</h2>
+
+            <p>
+                Fill in the form with as much information as possible.
+                This helps me understand exactly what you need.
+            </p>
+
+            <div class="quote-feature">
+                <i class="fa-solid fa-check"></i>
+                <span>No commitment required</span>
+            </div>
+
+            <div class="quote-feature">
+                <i class="fa-solid fa-check"></i>
+                <span>Project price discussed before work begins</span>
+            </div>
+
+            <div class="quote-feature">
+                <i class="fa-solid fa-check"></i>
+                <span>Direct communication throughout your project</span>
+            </div>
+
+        </div>
+
+
+        <form class="quote-form" id="quoteForm">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name"
+                    placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone / WhatsApp *</label>
+                    <input type="tel" id="phone" name="phone"
+                    placeholder="Enter your phone number" required>
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">Email Address</label>
+
+                <input type="email" id="email" name="email"
+                placeholder="Enter your email">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="service">What Service Do You Need? *</label>
+
+                <select id="service" name="service" required>
+
+                    <option value="">Select a service</option>
+
+                    <option value="Website Development">
+                        Website Development
+                    </option>
+
+                    <option value="Graphic Design">
+                        Graphic Design
+                    </option>
+
+                    <option value="Logo Design">
+                        Logo Design
+                    </option>
+
+                    <option value="Flyer Design">
+                        Flyer Design
+                    </option>
+
+                    <option value="Product Label Design">
+                        Product Label Design
+                    </option>
+
+                    <option value="Photo Editing">
+                        Photo Editing
+                    </option>
+
+                    <option value="Document Services">
+                        Document Services
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label for="budget">Estimated Budget</label>
+
+                    <select id="budget" name="budget">
+
+                        <option value="">Select budget</option>
+                        <option value="Below ₦10,000">Below ₦10,000</option>
+                        <option value="₦10,000 - ₦30,000">₦10,000 - ₦30,000</option>
+                        <option value="₦30,000 - ₦50,000">₦30,000 - ₦50,000</option>
+                        <option value="₦50,000+">₦50,000+</option>
+                        <option value="Not Sure">Not sure yet</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="deadline">Preferred Deadline</label>
+
+                    <input type="date" id="deadline" name="deadline">
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">Tell Me About Your Project *</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="7"
+                    placeholder="Describe what you need, preferred style, colours, features, size, etc."
+                    required>
+                </textarea>
+
+            </div>
+
+
+            <button type="submit" class="quote-submit">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Send Request via WhatsApp
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>Mars Tee Studio</h3>
+
+    <p>Web Development | Graphic Design | Photo Editing</p>
+
+    <p>© 2026 Mars Tee Studio. All Rights Reserved.</p>
+
+</footer>
+
+
+<script>
+
+document.getElementById("quoteForm").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+    const service = document.getElementById("service").value;
+    const budget = document.getElementById("budget").value;
+    const deadline = document.getElementById("deadline").value;
+    const message = document.getElementById("message").value;
+
+    const text =
+`Hello Mars Tee Studio,
+
+I would like to request a quote.
+
+Name: ${name}
+Phone/WhatsApp: ${phone}
+Email: ${email || "Not provided"}
+
+Service: ${service}
+Budget: ${budget || "Not specified"}
+Preferred Deadline: ${deadline || "Not specified"}
+
+Project Details:
+${message}`;
+
+    const whatsappURL =
+        "https://wa.me/2349124147362?text=" +
+        encodeURIComponent(text);
+
+    window.open(whatsappURL, "_blank");
+
+});
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1089 @@
+/* ===========================
+   MARS TEE STUDIO
+   STYLE.CSS
+===========================*/
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.7;
+}
+
+/* LINKS */
+
+a{
+    text-decoration:none;
+}
+
+/* IMAGES */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ===========================
+      NAVIGATION
+===========================*/
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:#fff;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.logo img{
+    height:60px;
+}
+
+.menu{
+    display:flex;
+    gap:35px;
+}
+
+.menu a{
+
+    color:#222;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.menu a:hover{
+
+    color:#0d6efd;
+
+}
+
+/* ===========================
+      BUTTONS
+===========================*/
+
+.btn,
+button{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:180px;
+
+    height:55px;
+
+    border-radius:35px;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:white;
+
+    color:#0d6efd;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    transition:.35s;
+
+}
+
+.btn:hover,
+button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 25px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+      HERO
+===========================*/
+
+.container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:80px;
+
+    padding:90px 8%;
+
+    background:linear-gradient(135deg,#0d6efd,#4f9cff);
+
+    color:white;
+
+}
+
+.left img{
+
+    width:320px;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.2);
+
+    transition:.4s;
+
+}
+
+.left img:hover{
+
+    transform:scale(1.04);
+
+}
+
+.right{
+
+    max-width:600px;
+
+}
+
+.right h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.right p{
+
+    font-size:20px;
+
+    color:#eef5ff;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:35px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================
+      SECTIONS
+===========================*/
+
+section{
+
+    padding:90px 8%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#0d6efd;
+
+    margin-bottom:18px;
+
+}
+
+section h2::after{
+
+    content:"";
+
+    width:80px;
+
+    height:4px;
+
+    background:#0d6efd;
+
+    display:block;
+
+    margin:15px auto;
+
+    border-radius:30px;
+
+}
+
+/* ===========================
+      CARDS
+===========================*/
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    overflow:hidden;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.card i{
+
+    font-size:52px;
+
+    color:#0d6efd;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:#003366;
+
+}
+
+.card p{
+
+    color:#555;
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================
+      CTA
+===========================*/
+
+.cta{
+
+    background:#0d6efd;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.cta h2{
+
+    color:white;
+
+}
+
+.cta p{
+
+    max-width:700px;
+
+    margin:25px auto;
+
+    color:#eef5ff;
+
+    font-size:20px;
+
+}
+
+.cta .btn{
+
+    background:white;
+
+    color:#0d6efd;
+
+}
+
+/* ===========================
+      ABOUT PAGE
+===========================*/
+
+.about-hero{
+    background:linear-gradient(135deg,#0d6efd,#4f9cff);
+    color:white;
+    text-align:center;
+    padding:100px 8%;
+}
+
+.about-hero h1{
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+.about-hero p{
+    max-width:750px;
+    margin:auto;
+    font-size:20px;
+    color:#eef5ff;
+}
+
+.about-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+    padding:90px 8%;
+}
+
+.about-image img{
+    width:340px;
+    border-radius:20px;
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+}
+
+.about-text{
+    flex:1;
+    min-width:320px;
+}
+
+.about-text h2{
+    text-align:left;
+    margin-bottom:25px;
+}
+
+.about-text h2::after{
+    margin:15px 0;
+}
+
+.about-text p{
+    color:#555;
+    font-size:18px;
+    margin-bottom:18px;
+}
+
+.stats{
+    display:flex;
+    gap:45px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.stat{
+    text-align:center;
+}
+
+.stat h3{
+    font-size:36px;
+    color:#0d6efd;
+}
+
+.stat p{
+    color:#666;
+}
+
+/* ===========================
+      SERVICES
+===========================*/
+
+.services{
+    background:#f5f7fb;
+}
+
+.services .card{
+    text-align:center;
+}
+
+.services .card i{
+    font-size:60px;
+}
+
+.services .card:hover{
+    transform:translateY(-12px);
+}
+
+/* ===========================
+      PORTFOLIO
+===========================*/
+
+.projects{
+    background:white;
+}
+
+.projects .card{
+    padding:20px;
+}
+
+.projects .card img{
+    height:240px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.4s;
+}
+
+.projects .card:hover img{
+    transform:scale(1.05);
+}
+
+.project-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#0d6efd;
+
+    color:white;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.project-btn:hover{
+
+    background:#084298;
+
+    transform:translateY(-3px);
+
+}
+
+.projects .card h3{
+
+    margin-top:15px;
+
+}
+
+.projects .card p{
+
+    margin-top:12px;
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================
+      WHY CHOOSE ME
+===========================*/
+
+.why-me{
+
+    background:#f5f7fb;
+
+}
+
+.why-me .card{
+
+    text-align:center;
+
+}
+
+.why-me .card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+/* ===========================
+      CONTACT PAGE
+===========================*/
+
+.contact-hero{
+    background:linear-gradient(135deg,#0d6efd,#4f9cff);
+    color:white;
+    text-align:center;
+    padding:100px 8%;
+}
+
+.contact-hero h1{
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+.contact-hero p{
+    max-width:700px;
+    margin:auto;
+    color:#eef5ff;
+    font-size:20px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    padding:90px 8%;
+}
+
+.contact-card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.contact-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.contact-card i{
+    font-size:55px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.contact-card h3{
+    margin-bottom:12px;
+    color:#003366;
+}
+
+.contact-card p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.contact-form{
+    max-width:800px;
+    margin:70px auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+
+.contact-form h2{
+    margin-bottom:30px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:16px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#0d6efd;
+}
+
+.contact-form button{
+    width:100%;
+    background:#0d6efd;
+    color:white;
+}
+
+.contact-form button:hover{
+    background:#084298;
+}
+
+/* ===========================
+      SOCIAL ICONS
+===========================*/
+
+.social-icons{
+    text-align:center;
+    margin:60px 0;
+}
+
+.social-icons a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:60px;
+    height:60px;
+    margin:10px;
+    background:#0d6efd;
+    color:white;
+    border-radius:50%;
+    font-size:24px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:#084298;
+    transform:translateY(-6px);
+}
+
+/* ===========================
+      FOOTER
+===========================*/
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+    color:#eef5ff;
+}
+
+/* ===========================
+      WHATSAPP BUTTON
+===========================*/
+
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:60px;
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    font-size:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
+/* ===========================
+      ANIMATIONS
+===========================*/
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes slideLeft{
+    from{
+        opacity:0;
+        transform:translateX(-50px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+.left{
+    animation:slideLeft 1s ease;
+}
+
+.right{
+    animation:fadeIn 1s ease;
+}
+
+/* ===========================
+      RESPONSIVE
+===========================*/
+
+@media (max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+}
+
+.menu{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+}
+
+.container{
+    flex-direction:column;
+    text-align:center;
+    padding:70px 25px;
+}
+
+.left img{
+    width:240px;
+}
+
+.right h1{
+    font-size:38px;
+}
+
+.right p{
+    font-size:18px;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+section{
+    padding:70px 25px;
+}
+
+.about-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.about-text h2{
+    text-align:center;
+}
+
+.about-text h2::after{
+    margin:15px auto;
+}
+
+.stats{
+    justify-content:center;
+}
+
+.cards,
+.contact-grid{
+    grid-template-columns:1fr;
+}
+
+.contact-form{
+    padding:25px;
+}
+
+.logo img{
+    height:50px;
+}
+
+}
+
+/* ===========================
+      404 PAGE
+===========================*/
+
+.error-page{
+    min-height:75vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#0d6efd,#4f9cff);
+    color:white;
+}
+
+.error-page h1{
+    font-size:150px;
+    margin:0;
+    font-weight:800;
+    line-height:1;
+}
+
+.error-page h2{
+    color:white;
+    font-size:42px;
+    margin:20px 0;
+}
+
+.error-page h2::after{
+    display:none;
+}
+
+.error-page p{
+    max-width:600px;
+    font-size:20px;
+    color:#eef5ff;
+    margin-bottom:35px;
+}
+
+.error-page .btn{
+    background:white;
+    color:#0d6efd;
+}
+
+.error-page .btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+/* ===========================
+      REQUEST A QUOTE PAGE
+=========================== */
+
+.quote-hero{
+    background:linear-gradient(135deg,#0d6efd,#4f9cff);
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.quote-hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.quote-hero p{
+    max-width:650px;
+    margin:auto;
+    font-size:19px;
+    color:#eef5ff;
+}
+
+.quote-section{
+    background:#f5f7fb;
+    padding:90px 8%;
+}
+
+.quote-container{
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:0.8fr 1.2fr;
+
+    gap:70px;
+    align-items:start;
+}
+
+
+/* LEFT SIDE */
+
+.quote-intro{
+    padding-top:20px;
+}
+
+.small-title{
+    color:#0d6efd;
+    font-weight:bold;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.quote-intro h2{
+    text-align:left;
+    font-size:40px;
+    color:#222;
+    line-height:1.25;
+    margin:15px 0 20px;
+}
+
+.quote-intro h2::after{
+    display:none;
+}
+
+.quote-intro > p{
+    color:#666;
+    margin-bottom:35px;
+}
+
+.quote-feature{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin:20px 0;
+    color:#444;
+}
+
+.quote-feature i{
+    width:35px;
+    height:35px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#e7f1ff;
+    color:#0d6efd;
+
+    border-radius:50%;
+}
+
+
+/* FORM */
+
+.quote-form{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+    border-radius:10px;
+
+    font-family:inherit;
+    font-size:16px;
+
+    outline:none;
+
+    background:white;
+
+    transition:.3s;
+}
+
+.form-group textarea{
+    resize:vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 0 3px rgba(13,110,253,.1);
+}
+
+
+/* SEND BUTTON */
+
+.quote-submit{
+    width:100%;
+    min-width:0;
+
+    background:#0d6efd;
+    color:white;
+
+    gap:10px;
+}
+
+.quote-submit:hover{
+    background:#084298;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .quote-hero{
+        padding:70px 20px;
+    }
+
+    .quote-hero h1{
+        font-size:40px;
+    }
+
+    .quote-container{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .quote-intro{
+        text-align:center;
+    }
+
+    .quote-intro h2{
+        text-align:center;
+        font-size:32px;
+    }
+
+    .quote-feature{
+        justify-content:center;
+    }
+
+    .quote-form{
+        padding:25px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+        gap:0;
+    }
+
+}
