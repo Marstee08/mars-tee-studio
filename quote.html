@@ -1,291 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Request a Quote | Mars Tee Studio</title>
-
-    <meta name="description"
-    content="Request a quote from Mars Tee Studio for web development, graphic design, photo editing and document services.">
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-
-<body>
-
-<!-- NAVIGATION -->
-
-<nav>
-
-    <div class="logo">
-        <a href="index.html">
-            <img src="images/favicon.png" alt="Mars Tee Studio">
-        </a>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07152f">
+<meta name="description" content="Mars Tee Studio creates premium websites, digital experiences, branding and creative digital solutions for modern businesses and individuals worldwide.">
+<meta name="author" content="Mars Tee Studio">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="style.css"><title>Start a Project | Mars Tee Studio</title></head><body><header class="site-header" id="site-header">
+  <nav class="nav shell" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="Mars Tee Studio home">
+      <img src="images/mars-tee-logo.png" alt="Mars Tee Studio">
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <div class="nav-menu" id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="quote.html">Start a Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <label class="theme-switch" title="Toggle dark mode"><input type="checkbox" id="theme-toggle"><span><i class="fa-solid fa-moon"></i></span></label>
     </div>
-
-   <div class="menu">
-        <a href="index.html">🏠Home</a>
-        <a href="about.html">👤About</a>
-        <a href="services.html">💼Services</a>
-        <a href="portfolio.html">🖼Portfolio</a>
-        <a href="contact.html">📞Contact</a>
-         <label class="switch">
-    <input type="checkbox" id="theme-toggle">
-    <span class="slider"></span>
-</label>
+  </nav>
+</header><main><section class="page-hero"><div class="shell reveal"><span class="section-kicker light">START A PROJECT</span><h1>Let's plan your <span class="blue-text">next move.</span></h1><p>Choose what you need, share the details and we'll guide you from there. You don't have to know the technical stuff.</p></div></section><section class="section shell order-layout"><div class="order-intro reveal"><span class="section-kicker">PROJECT BRIEF</span><h2>Good projects start with a clear <span class="gradient-text">conversation.</span></h2><p>Give us enough context to understand the idea. We'll review it, recommend a suitable package and confirm the final scope and price before work begins.</p><div class="order-benefits"><div><i class="fa-solid fa-check"></i><span>Choose a service and package</span></div><div><i class="fa-solid fa-check"></i><span>Upload references when needed</span></div><div><i class="fa-solid fa-check"></i><span>Get guidance before committing</span></div></div></div><form class="form-card order-form reveal" id="quoteForm"><div class="form-row"><label>Full name<input name="from_name" required placeholder="Your name"></label><label>Email<input name="from_email" type="email" required placeholder="you@example.com"></label></div><div class="form-row"><label>Phone / WhatsApp<input name="phone" placeholder="Your preferred contact"></label><label>Service<select name="service" id="service" required><option value="">Select a service</option><option>Website Design & Development</option><option>Digital Experience</option><option>Graphic Design</option><option>Branding & Visual Identity</option><option>Social Media Design</option><option>Custom / Not sure</option></select></label></div><div class="form-row"><label>Package<select name="package"><option value="">Choose a package</option><option>Basic</option><option>Standard</option><option>Premium</option><option>Luxury</option><option>One-Page Website</option><option>Custom</option></select></label><label>Preferred deadline<input name="deadline" type="text" placeholder="e.g. 2 weeks / flexible"></label></div><label>Project details<textarea name="message" rows="8" required placeholder="Tell us what you want to create, who it is for and any important features."></textarea></label><label>Reference / file link<input name="reference" placeholder="Optional link to references or files"></label><button class="btn btn-primary full" type="submit">Submit project brief <i class="fa-solid fa-arrow-right"></i></button><p id="quote-status" class="form-status" aria-live="polite"></p></form></section></main><footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <a class="brand footer-brand" href="index.html"><img src="images/mars-tee-logo.png" alt="Mars Tee Studio"></a>
+      <p class="footer-lead">Premium websites, digital experiences and creative solutions designed to make your brand impossible to ignore.</p>
+      <div class="social-row">
+        <a href="https://wa.me/2349124147362" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/marsteestudio" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/marsteestudio" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@marsteestudio" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
     </div>
-
-</nav>
-
-
-<!-- HERO -->
-
-<section class="quote-hero">
-
-    <h1>Request a Quote</h1>
-
-    <p>
-        Tell me about your project and I'll get back to you
-        to discuss the details and pricing.
-    </p>
-
-</section>
-
-
-<!-- ORDER FORM -->
-
-<section class="quote-section">
-
-    <div class="quote-container">
-
-        <div class="quote-intro">
-
-            <span class="small-title">START A PROJECT</span>
-
-            <h2>Let's Bring Your Idea to Life</h2>
-
-            <p>
-                Fill in the form with as much information as possible.
-                This helps me understand exactly what you need.
-            </p>
-
-            <div class="quote-feature">
-                <i class="fa-solid fa-check"></i>
-                <span>No commitment required</span>
-            </div>
-
-            <div class="quote-feature">
-                <i class="fa-solid fa-check"></i>
-                <span>Project price discussed before work begins</span>
-            </div>
-
-            <div class="quote-feature">
-                <i class="fa-solid fa-check"></i>
-                <span>Direct communication throughout your project</span>
-            </div>
-
-        </div>
-
-
-        <form class="quote-form" id="quoteForm">
-
-            <div class="form-row">
-
-                <div class="form-group">
-                    <label for="name">Your Name *</label>
-                    <input type="text" id="name" name="name"
-                    placeholder="Enter your name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone / WhatsApp *</label>
-                    <input type="tel" id="phone" name="phone"
-                    placeholder="Enter your phone number" required>
-                </div>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="email">Email Address</label>
-
-                <input type="email" id="email" name="email"
-                placeholder="Enter your email">
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="service">What Service Do You Need? *</label>
-
-                <select id="service" name="service" required>
-
-                    <option value="">Select a service</option>
-
-                    <option value="Website Development">
-                        Website Development
-                    </option>
-
-                    <option value="Graphic Design">
-                        Graphic Design
-                    </option>
-
-                    <option value="Logo Design">
-                        Logo Design
-                    </option>
-
-                    <option value="Flyer Design">
-                        Flyer Design
-                    </option>
-
-                    <option value="Product Label Design">
-                        Product Label Design
-                    </option>
-
-                    <option value="Photo Editing">
-                        Photo Editing
-                    </option>
-
-                    <option value="Document Services">
-                        Document Services
-                    </option>
-
-                    <option value="Other">
-                        Other
-                    </option>
-
-                </select>
-
-            </div>
-
-
-            <div class="form-row">
-
-                <div class="form-group">
-
-                    <label for="budget">Estimated Budget</label>
-
-                    <select id="budget" name="budget">
-
-                        <option value="">Select budget</option>
-                        <option value="Below ₦10,000">Below ₦10,000</option>
-                        <option value="₦10,000 - ₦30,000">₦10,000 - ₦30,000</option>
-                        <option value="₦30,000 - ₦50,000">₦30,000 - ₦50,000</option>
-                        <option value="₦50,000+">₦50,000+</option>
-                        <option value="Not Sure">Not sure yet</option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="deadline">Preferred Deadline</label>
-
-                    <input type="date" id="deadline" name="deadline">
-
-                </div>
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="message">Tell Me About Your Project *</label>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="7"
-                    placeholder="Describe what you need, preferred style, colours, features, size, etc."
-                    required>
-                </textarea>
-
-            </div>
-
-
-            <button type="submit" class="quote-submit">
-
-                <i class="fa-brands fa-whatsapp"></i>
-
-                Send Request via WhatsApp
-
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    <h3>Mars Tee Studio</h3>
-
-    <p>Web Development | Graphic Design | Photo Editing</p>
-
-    <p>© 2026 Mars Tee Studio. All Rights Reserved.</p>
-
+    <div><h4>Explore</h4><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    <div><h4>What we create</h4><a href="services.html#websites">Websites</a><a href="services.html#digital">Digital Experiences</a><a href="services.html#branding">Branding</a><a href="services.html#creative">Creative Design</a></div>
+    <div><h4>Start a project</h4><p>Tell us what you're building and we'll help shape the right solution.</p><a class="footer-link" href="quote.html">Request a quote <i class="fa-solid fa-arrow-right"></i></a></div>
+  </div>
+  <div class="shell footer-bottom"><span>© 2026 Mars Tee Studio. All rights reserved.</span><span>Designed with intention. Built to perform.</span></div>
 </footer>
-
-
-<script>
-
-document.getElementById("quoteForm").addEventListener("submit", function(event){
-
-    event.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const email = document.getElementById("email").value;
-    const service = document.getElementById("service").value;
-    const budget = document.getElementById("budget").value;
-    const deadline = document.getElementById("deadline").value;
-    const message = document.getElementById("message").value;
-
-    const text =
-`Hello Mars Tee Studio,
-
-I would like to request a quote.
-
-Name: ${name}
-Phone/WhatsApp: ${phone}
-Email: ${email || "Not provided"}
-
-Service: ${service}
-Budget: ${budget || "Not specified"}
-Preferred Deadline: ${deadline || "Not specified"}
-
-Project Details:
-${message}`;
-
-    const whatsappURL =
-        "https://wa.me/2349124147362?text=" +
-        encodeURIComponent(text);
-
-    window.open(whatsappURL, "_blank");
-
-});
-
-</script>
-
-<button id="backToTop" title="Go to top">
-    <i class="fa-solid fa-arrow-up"></i>
-</button>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
+<a class="floating-whatsapp" href="https://wa.me/2349124147362?text=Hello%20Mars%20Tee%20Studio%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button><script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script><script src="script.js"></script></body></html>
